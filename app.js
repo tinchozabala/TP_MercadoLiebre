@@ -9,6 +9,10 @@ app.get ("/registro", function (req, res){
     res.sendFile (__dirname + "/views/registro.html")
 })
 
+app.get ("/inicia-sesion", function (req, res){
+    res.sendFile (__dirname + "/views/inicia-sesion.html")
+})
+
 app.get ("*", function (req, res){
     res.sendFile (__dirname + "/public" + req.url)
 })
