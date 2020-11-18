@@ -21,6 +21,10 @@ app.post ("/", function (req, res){
     res.redirect ("/")
 })
 
+app.post ("*", function (req, res){
+    res.redirect ("/")
+})
+
 app.listen (3000, function (){
     console.log ("para ver el sitio ingresa a http://localhost:3000")
 })
